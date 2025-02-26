@@ -2,10 +2,11 @@ import requests
 import folium
 import json
 import webbrowser
+from my_api import API_KEY
 from flask import Flask, render_template_string, request
 
 # Replace with your actual OpenWeatherMap API key
-API_KEY = "40ac47e4005574438c138af06e000fdb"
+API_KEY = API_KEY #For security reasons, I have stored API KEy in a different Python file and imported it as a module
 
 app = Flask(__name__)
 
